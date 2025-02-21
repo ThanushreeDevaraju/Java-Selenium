@@ -23,18 +23,18 @@ public static void main(String[] args) {
      	//class
      	driver.findElement(By.name("search")).sendKeys("T-shirt");
 				
-		//LinkedList
+		//Linked Text
 		driver.findElement(By.linkText("Tablets")).click();
 		
 		
-		//partial LinkedList
+		//partial Linked Text
 		driver.findElement(By.partialLinkText("Produc")).click();
 		
 		//class name
 		List<WebElement> th= driver.findElements(By.className("list-inline-item"));
 		System.out.println(th.size());
 		
-		//Tagname
+		//Tag name
 		List<WebElement> list=driver.findElements(By.tagName("a"));
 		System.out.println(list.size());
 		

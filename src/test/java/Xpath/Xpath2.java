@@ -14,7 +14,7 @@ public class Xpath2 {
 		driver.manage().window().maximize();
 		
 		//x-path for inner and linked  text-text()
-		//driver.findElement(By.xpath("//*[text()='Desktops']")).click();
+		driver.findElement(By.xpath("//*[text()='Desktops']")).click();
 		
 	//	driver.findElement(By.xpath("//a[text()='MacBook']")).click();
 		

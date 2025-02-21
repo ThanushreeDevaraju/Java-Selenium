@@ -27,6 +27,25 @@ public class ConditionalMethods {
 		boolean status1=driver.findElement(By.xpath("//button[@name='register-button']")).isEnabled();
 		System.out.println(status1);
 		
+		//Before selection
+		WebElement male=driver.findElement(By.xpath("//input[@id='gender-male']"));
+		WebElement female=driver.findElement(By.xpath("//input[@id='gender-female']"));
+		System.out.println(male.isSelected());
+		System.out.println(female.isSelected());
+		
+		//to click radio button
+		male.click();
+		System.out.println("after selecting male radio button");
+		System.out.println(male.isSelected());
+		System.out.println(female.isSelected());
+		
+		//radio button testing.
+		WebElement radio=driver.findElement(By.xpath("//input[@name='Newsletter']"));
+		System.out.println(radio.isSelected());
+		radio.click();
+		System.out.println(radio.isSelected());
+		
+		
 	}
 
 }
