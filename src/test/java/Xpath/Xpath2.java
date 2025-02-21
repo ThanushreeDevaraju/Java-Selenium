@@ -10,7 +10,7 @@ public class Xpath2 {
 	public static void main(String[] args) {
 		WebDriver driver=new ChromeDriver();
 
-		driver.get("https://demo.opencart.com/");
+		driver.get("https://demo.opencart.com/"); 
 		driver.manage().window().maximize();
 		
 		//x-path for inner and linked  text-text()
